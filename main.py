@@ -6,7 +6,7 @@ import serial
 from pynput.keyboard import Controller
 
 pygame.init()
- 
+
 # Define some colors
 BLACK = (0,0,0)
 WHITE = (255,255,255)
@@ -15,11 +15,13 @@ WHITE = (255,255,255)
 size = (700, 500)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("Pong")
- 
+
+#Left Paddle 
 paddleA = Paddle(WHITE, 10, 100)
 paddleA.rect.x = 20
 paddleA.rect.y = 200
  
+#Right Paddle
 paddleB = Paddle(WHITE, 10, 100)
 paddleB.rect.x = 670
 paddleB.rect.y = 200
@@ -53,34 +55,42 @@ while carryOn:
         if event.type == pygame.QUIT: # If user clicked close
               carryOn = False # Flag that we are done so we exit this loop
         elif event.type==pygame.KEYDOWN:
-                if event.key==pygame.K_x: #Pressing the x Key will quit the game
+                if event.key==pygame.K_p: #Pressing the x Key will quit the game
                      carryOn=False
+        elif (scoreA == 5) or (scoreB == 5):
+            # carryOn = False # Flag that we are done so we exit this loop
+            if scoreA == 5:
+                print("Player A Wins!")
+            elif scoreB == 5:
+                print("Player B Wins!")
+            carryOn = False # Flag that we are done so we exit this loop
+             
     
- #Controller
-    ser = serial.Serial('/dev/cu.usbmodem14101', 9600)
-    keyboard = Controller()
+ # #Controller
+ #    ser = serial.Serial('/dev/cu.usbmodem14101', 9600)
+ #    keyboard = Controller()
 
-    data = ser.readline()
-    print(data.decode('utf-8'))   
+ #    data = ser.readline()
+ #    print(data.decode('utf-8'))   
     
-    if data.decode('utf-8') == "d":
-        keyboard.press("d")
+ #    if data.decode('utf-8') == "d":
+ #        keyboard.press("d")
         
-    if data.decode('utf-8') == "!d":
-        keyboard.release("d")
+ #    if data.decode('utf-8') == "!d":
+ #        keyboard.release("d")
     
-    if data.decode('utf-8') == "a":
-        keyboard.press("a")
+ #    if data.decode('utf-8') == "a":
+ #        keyboard.press("a")
         
-    if data.decode('utf-8') == "!a":
-        keyboard.release("a")
+ #    if data.decode('utf-8') == "!a":
+ #        keyboard.release("a")
     
     
     #Moving the paddles when the use uses the arrow keys (player A) or "W/S" keys (player B) 
     keys = pygame.key.get_pressed()
-    if keys[pygame.K_d]:
+    if keys[pygame.K_w]:
         paddleA.moveUp(5)
-    if keys[pygame.K_a]:
+    if keys[pygame.K_s]:
         paddleA.moveDown(5)
     if keys[pygame.K_UP]:
         paddleB.moveUp(5)
