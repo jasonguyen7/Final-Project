@@ -22,5 +22,5 @@ Game Instructions:
 Press X key anytime to stop the game.
 Move the paddles up and down using the push buttons.
 Prevent the ball from passing the paddle.
-Try to make the ball pass the oppenents paddle to score.
+Try to make the ball miss the oppenent's paddle to score.
 Have Fun!
