@@ -11,6 +11,8 @@ Python - pip install pygame
 Conda - conda install pygame
 
 Next, download all python code and arduino files.
+Make connections using an Arduino and Push Buttons.
+Run Game in main.py file.
 
 
 
