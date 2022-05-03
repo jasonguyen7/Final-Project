@@ -12,7 +12,7 @@ Next, download all python code and arduino files.
 Make connections using an Arduino and Push Buttons.
 Follow Instructions from How to turn the ATMEGA chip of an Arduino Uno and Arduino Mega into a HID keyboard device.pdf file to turn the Arduino into HID Controller.
 
-If more info needed, refer to useful links from google slide presenatation.
+If more info needed, refer to ArduinoHIDController folder.
 
 Run Game in main.py file.
 
