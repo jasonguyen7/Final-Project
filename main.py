@@ -2,8 +2,6 @@
 import pygame
 from paddle import Paddle
 from ball import Ball
-import serial
-from pynput.keyboard import Controller
 
 pygame.init()
 
@@ -64,27 +62,6 @@ while carryOn:
             elif scoreB == 5:
                 print("Player B Wins!")
             carryOn = False # Flag that we are done so we exit this loop
-             
-    
- # #Controller
- #    ser = serial.Serial('/dev/cu.usbmodem14101', 9600)
- #    keyboard = Controller()
-
- #    data = ser.readline()
- #    print(data.decode('utf-8'))   
-    
- #    if data.decode('utf-8') == "d":
- #        keyboard.press("d")
-        
- #    if data.decode('utf-8') == "!d":
- #        keyboard.release("d")
-    
- #    if data.decode('utf-8') == "a":
- #        keyboard.press("a")
-        
- #    if data.decode('utf-8') == "!a":
- #        keyboard.release("a")
-    
     
     #Moving the paddles when the use uses the arrow keys (player A) or "W/S" keys (player B) 
     keys = pygame.key.get_pressed()
