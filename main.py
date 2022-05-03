@@ -53,7 +53,7 @@ while carryOn:
         if event.type == pygame.QUIT: # If user clicked close
               carryOn = False # Flag that we are done so we exit this loop
         elif event.type==pygame.KEYDOWN:
-                if event.key==pygame.K_p: #Pressing the x Key will quit the game
+                if event.key==pygame.K_p: #Pressing the P Key will quit the game
                      carryOn=False
         elif (scoreA == 5) or (scoreB == 5):
             # carryOn = False # Flag that we are done so we exit this loop
