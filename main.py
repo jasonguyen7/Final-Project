@@ -73,9 +73,7 @@ while carryOn:
         paddleB.moveUp(5)
     if keys[pygame.K_DOWN]:
         paddleB.moveDown(5)    
-   
-
-
+ 
     # --- Game logic should go here
     all_sprites_list.update()
     
