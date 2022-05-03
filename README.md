@@ -1,17 +1,17 @@
 # Final-Project
 
-To Run this game, the you must install Pyserial and Pygame in Python.
-
-Pyserial Installation:
-Python - pip install pyserial
-Conda - conda install pyserial
+To Run this game, the you must install Pygame in Python and JRE Flip software for the Arduino Uno to be used as an HID controller.
 
 Pygame Installation:
 Python - pip install pygame
 Conda - conda install pygame
 
+
+
 Next, download all python code and arduino files.
 Make connections using an Arduino and Push Buttons.
+Use useful links list from Google Slide Presentation to use the JRE Software and make breadboard instructions.
+
 Run Game in main.py file.
 
 
