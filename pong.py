@@ -120,14 +120,15 @@ p2_move_down = False
 ### choose second players
 
 ########################################################
-p2_type = 'following'
+p2_type = 'single'
 ########################################################
 
-if p2_type == 'following': 
+if p2_type == 'single': 
     # computer will follow ball
     p2_handle_event = following_handle_event
     p2_update = following_update
-else:    
+    
+elif p2_type == 'multiplayer':    
     # human will click keys
     p2_handle_event = human_handle_event
     p2_update = human_update
