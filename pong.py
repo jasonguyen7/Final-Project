@@ -46,9 +46,7 @@ def human_update():
     # do nothing
     pass
 
-
 # computer follows ball
-
 def following_handle_event(event):
     # do nothing
     pass
@@ -90,7 +88,8 @@ P2_DOWN = pygame.K_DOWN
 
 # other constants
 PLAYER_PAD_LENGTH = 100
-PLAYER_PAD_SPEED = 10
+PLAYER1_PAD_SPEED = 20
+PLAYER2_PAD_SPEED = 4.5
 PLAYER_PAD_WIDTH = 10
 BALL_RADIUS = 6
 
@@ -118,7 +117,6 @@ p2_move_up = False
 p2_move_down = False
 
 ### choose second players
-
 ########################################################
 p2_type = 'single'
 ########################################################
@@ -127,7 +125,6 @@ if p2_type == 'single':
     # computer will follow ball
     p2_handle_event = following_handle_event
     p2_update = following_update
-    
 elif p2_type == 'multiplayer':    
     # human will click keys
     p2_handle_event = human_handle_event
@@ -171,19 +168,19 @@ while carryOn:
 
     ## move player pads according to player move flags
     if p1_move_up:
-        p1_pad_y -= PLAYER_PAD_SPEED
+        p1_pad_y -= PLAYER1_PAD_SPEED
         if p1_pad_y < 0:
             p1_pad_y = 0
     elif p1_move_down:
-        p1_pad_y += PLAYER_PAD_SPEED
+        p1_pad_y += PLAYER1_PAD_SPEED
         if p1_pad_y > DISPLAY_HEIGHT - PLAYER_PAD_LENGTH:
             p1_pad_y = DISPLAY_HEIGHT - PLAYER_PAD_LENGTH
     if p2_move_up:
-        p2_pad_y -= PLAYER_PAD_SPEED
+        p2_pad_y -= PLAYER2_PAD_SPEED
         if p2_pad_y < 0:
             p2_pad_y = 0
     elif p2_move_down:
-        p2_pad_y += PLAYER_PAD_SPEED
+        p2_pad_y += PLAYER2_PAD_SPEED
         if p2_pad_y > DISPLAY_HEIGHT - PLAYER_PAD_LENGTH:
             p2_pad_y = DISPLAY_HEIGHT - PLAYER_PAD_LENGTH
 
