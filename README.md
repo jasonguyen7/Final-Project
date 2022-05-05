@@ -10,7 +10,7 @@ Pyserial Installation:
 Python - pip install pyserial
 Conda - conda install pyserial
 
-Next, download all python code and arduino files. (Pong.py for single/multiplayer) & (main.py, paddle.py, and ball.py for single player)
+Next, download all python code and arduino files. (Pong.py for single/multiplayer) & (main.py, paddle.py, and ball.py for multiplayer and potentiometer)
 Construct circuit based on Circuit Diagram pdf. Make connections on a breadboard using an Arduino, Push Buttons, and Potentiometer.
 
 Follow Instructions from How to turn the ATMEGA chip of an Arduino Uno and Arduino Mega into a HID keyboard device.pdf to turn the Arduino into HID Controller.
