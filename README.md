@@ -10,13 +10,14 @@ Pyserial Installation:
 Python - pip install pyserial
 Conda - conda install pyserial
 
-Next, download all python code and arduino files. (Pong.py for single and multiplayer) & (Main.py, paddle.py, and ball.py for multiplayer)
-Make connections using an Arduino and Push Buttons.
+Next, download all python code and arduino files. 
+Construct circuit based on Circuit Diagram pdf. Make connections on a breadboard using an Arduino, Push Buttons, and Potentiometer.
+
 Follow Instructions from How to turn the ATMEGA chip of an Arduino Uno and Arduino Mega into a HID keyboard device.pdf to turn the Arduino into HID Controller.
 
-If more info needed, refer to ArduinoHIDKeyboard folder. Construct circuit based on Circuit Diagram pdf.
+If more info needed, refer to the google slides presentation.
 
-Run Game in main.py file.
+Run Game in pong.py file.
 
 
 
@@ -25,8 +26,10 @@ Pong is one of the first computer games that ever created, this simple "tennis l
 
 Game Instructions: 
 
-Press X key anytime to stop the game.
-Move the paddles up and down using the push buttons.
+Choose Player 2 type: Type single for single player and multiplayer for 2 players.
+
+Push P key anytime to stop the game.
+Move the paddles up and down using the push buttons or (W/S and Up/Down).
 Prevent the ball from passing the paddle.
 Try to make the ball miss the oppenent's paddle to score.
 Have Fun!
