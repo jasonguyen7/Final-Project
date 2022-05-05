@@ -8,7 +8,7 @@ Conda - conda install pygame
 
 
 
-Next, download all python code and arduino files.
+Next, download all python code and arduino files. (Pong.py for single and multiplayer) & (Main.py, paddle.py, and ball.py for multiplayer)
 Make connections using an Arduino and Push Buttons.
 Follow Instructions from How to turn the ATMEGA chip of an Arduino Uno and Arduino Mega into a HID keyboard device.pdf to turn the Arduino into HID Controller.
 
