@@ -3,9 +3,9 @@
 uint8_t buf[8] = { 0 };   //Keyboard report buffer
 
 #define PIN_W 4 // Pin for w
-#define PIN_S 5 // Pin for a
-#define PIN_Up 6 // Pin for s
-#define PIN_Down 7 // Pin for d
+#define PIN_S 5 // Pin for s
+#define PIN_Up 6 // Pin for up
+#define PIN_Down 7 // Pin for down
 
 void setup() {
   Serial.begin(9600); // Setup Serial communication
