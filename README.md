@@ -32,4 +32,5 @@ Push P key anytime to stop the game.
 Move the paddles up and down using the push buttons or (W/S and Up/Down).
 Prevent the ball from passing the paddle.
 Try to make the ball miss the oppenent's paddle to score.
+First player to score 5 points wins!
 Have Fun!
