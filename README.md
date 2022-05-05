@@ -1,12 +1,14 @@
 # Final-Project
 
-To Run this game, the you must install Pygame in Python and JRE Flip software for the Arduino Uno to be used as an HID controller.
+To Run this game, the you must install Pygame and pyserial in Python and JRE Flip software for the Arduino Uno to be used as an HID controller.
 
 Pygame Installation:
 Python - pip install pygame
 Conda - conda install pygame
 
-
+Pyserial Installation:
+Python - pip install pyserial
+Conda - conda install pyserial
 
 Next, download all python code and arduino files. (Pong.py for single and multiplayer) & (Main.py, paddle.py, and ball.py for multiplayer)
 Make connections using an Arduino and Push Buttons.
